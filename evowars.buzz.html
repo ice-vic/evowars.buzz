@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EvoWars.io - Play the Ultimate Evolution Arena Game Online | EvoWars.buzz</title>
+    <meta name="description" content="Play EvoWars.io online for free at EvoWars.buzz. Evolve your warrior, collect orbs, and dominate the arena in this addictive hack-and-slash IO game. No download required. 【1000+ words Advanced Strategy Guide】">
+    <meta name="keywords" content="EvoWars.io, Evo Wars, IO Games, Battle Royale, Browser Game, Free Online Games, Evolution Game, EvoWars strategy, EvoWars tips, EvoWars guide">
+    <link rel="canonical" href="https://evowars.buzz">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evowars.buzz/">
+    <meta property="og:title" content="EvoWars.io - Play Free Online">
+    <meta property="og:description" content="Fight, kill, and evolve! Join the massive deathmatch arena in EvoWars.io.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        apple: {
+                            gray: '#F5F5F7',
+                            dark: '#1D1D1F',
+                            blue: '#0071E3',
+                            blueHover: '#0077ED',
+                        }
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1D1D1F 0%, #434344 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8; 
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "EvoWars.io",
+      "url": "https://evowars.buzz",
+      "genre": ["IO Game", "Action", "Multiplayer"],
+      "gamePlatform": "Web Browser",
+      "applicationCategory": "Game",
+      "operatingSystem": "Any",
+      "description": "EvoWars.io is a multiplayer io game where you control a warrior and evolve by collecting orbs and defeating enemies.",
+      "author": {
+        "@type": "Organization",
+        "name": "Night Steed Games"
+      }
+    }
+    </script>
+</head>
+<body class="bg-apple-gray text-apple-dark antialiased selection:bg-apple-blue selection:text-white">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 top-0 glass-panel border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-apple-blue to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">E</div>
+                    <span class="font-bold text-xl tracking-tight text-gray-900">EvoWars.buzz</span>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#strategy" class="text-sm font-medium text-gray-500 hover:text-apple-blue transition-colors">Strategy Guide</a>
+                    <a href="#features" class="text-sm font-medium text-gray-500 hover:text-apple-blue transition-colors">Features</a>
+                    <a href="#faq" class="text-sm font-medium text-gray-500 hover:text-apple-blue transition-colors">FAQ</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-gray-900 focus:outline-none p-2 rounded-md">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#strategy" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-apple-blue hover:bg-white/50">Strategy Guide</a>
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-apple-blue hover:bg-white/50">Features</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-apple-blue hover:bg-white/50">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        
+        <section class="mb-16">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 gradient-text">
+                    EvoWars.io Game Online
+                </h1>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+                    Enter the arena, evolve your warrior, and become the legend of the Deathmatch.
+                </p>
+            </div>
+
+            <div id="game-container" class="relative w-full max-w-5xl mx-auto bg-black rounded-3xl shadow-2xl overflow-hidden ring-1 ring-black/5 aspect-video group">
+                <div class="absolute inset-0 flex items-center justify-center bg-gray-900 -z-10">
+                    <span class="text-white/50 animate-pulse">Loading Arena...</span>
+                </div>
+
+                <iframe 
+                    id="game-frame"
+                    src="https://games.crazygames.com/en_US/evowarsio/index.html" 
+                    class="w-full h-full border-none"
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    title="CrazyGames - evowarsio" 
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation allow-gamepad">
+                </iframe>
+                
+                <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button onclick="toggleFullScreen()" class="bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-2 rounded-full border border-white/30 shadow-lg transition-all transform hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-6 flex justify-center gap-4">
+                <button onclick="toggleFullScreen()" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-apple-blue hover:bg-apple-blueHover transition-all hover:shadow-lg hover:-translate-y-0.5">
+                    <svg class="mr-2 -ml-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Play Fullscreen
+                </button>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+                <div class="lg:col-span-2 space-y-12">
+                    <article id="strategy" class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <h2 class="text-2xl font-bold mb-6 flex items-center">
+                            <span class="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                            </span>
+                            The Art of Evolution: Advanced EvoWars.io Strategy Guide
+                        </h2>
+                        <div class="prose prose-gray max-w-none text-gray-600 leading-relaxed">
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Mastering the Early Game: Survival and Fast Leveling</h3>
+                            <p>The first few minutes in EvoWars.io are the most dangerous. Starting as a small primitive warrior, your focus must be on **rapid experience accumulation** to reach Level 3 or 4 quickly, which grants essential speed and reach advantages. Your tiny weapon has almost no range, making direct conflict a high-risk gamble.</p>
+                            <ul class="list-disc ml-6 space-y-2">
+                                <li><strong>Orbs over Conflict:</strong> Until you hit Level 5, treat combat as a last resort. Prioritize collecting the scattered experience orbs (XP) that litter the map. Navigating the edges of the arena often yields safer, less contested orb groups.</li>
+                                <li><strong>The Sprint Gamble:</strong> The Right-Click (RMB) sprint button is your most complex tool. It consumes your current XP, essentially slowing your leveling. In the early game, use sprint **only** as an escape mechanism. Only engage a target with sprint if they are nearly stationary and you are *absolutely certain* of a killing blow, as a miss can set your progress back significantly.</li>
+                                <li><strong>Weapon Trailing Exploitation:</strong> EvoWars's damage is registered along the *entire path* of your weapon swing. Learn to utilize this 'weapon trail' by subtly moving your character during the attack animation. This technique expands your effective attack arc, letting you tag enemies who think they are safely outside your weapon's tip range.</li>
+                            </ul>
+                            
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">The Evolution Tiers: Range vs. Speed</h3>
+                            <p>EvoWars.io is a continuous trade-off between power and agility. As you evolve, your weapon range and physical size increase, but your base movement speed gradually decreases, making you a larger, slower target.</p>
+                            
+                            <div class="overflow-x-auto my-4">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead>
+                                        <tr>
+                                            <th class="px-3 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Evolution Level</th>
+                                            <th class="px-3 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Strategy Focus</th>
+                                            <th class="px-3 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Core Advantage</th>
+                                            <th class="px-3 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Core Risk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr>
+                                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">Level 1-5 (Novice)</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Survival and Evasion</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">High speed, small target profile. Excellent for stealth and hit-and-run tactics.</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Extremely short attack range; instant death against mid-tier players.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">Level 6-15 (Intermediate)</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Hunting and Distance Control</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Weapon reach provides a clear advantage over low levels.</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Vulnerable to being 'kited' by faster, smarter low-level players who bait attacks.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 py-2 whitespace-nowrap font-medium text-gray-900">Level 16+ (Giant)</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Area Denial and Intimidation</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Massive attack range allows for quick elimination of groups; high intimidation factor.</td>
+                                            <td class="px-3 py-2 whitespace-nowrap">Slow movement, making quick evasion impossible; susceptible to skilled players dodging the slow swing animation.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <p><strong>Hit and Run Reworked:</strong> Even at large sizes, never stand still during a fight. Swing your massive weapon, then immediately retreat backward to pull the enemy out of their potential attack range. This 'poke' method keeps the fight on your terms, utilizing your superior reach while mitigating your speed deficit.</p>
+                            <p><strong>The Counter-Sprint Tactics:</strong> When a larger player initiates a sprint toward you, do not sprint directly away. Instead, perform a short, sharp sprint **perpendicular** to their attack path (i.e., sprint sideways). This is the fastest way to exit the narrow kill zone of their lunging attack. Once their weapon is cooling down, you can immediately turn and pursue their vulnerable flanks.</p>
+
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Advanced Iframe Gaming and Full-Screen Focus</h3>
+                            <p>Our EvoWars.buzz page is designed for optimal performance. The 'Play Fullscreen' button is not just for immersion; it's a competitive advantage:</p>
+                            <ul class="list-disc ml-6 space-y-2">
+                                <li><strong>Fullscreen is Non-Negotiable:</strong> Playing in full-screen mode expands your Field of View (FoV) significantly, especially on wide monitors. This allows you to spot incoming threats or distant groups of orbs earlier than players using windowed mode.</li>
+                                <li><strong>Mouse Sensitivity for Precision:</strong> The precision of your aiming is key to EvoWars. We recommend adjusting your operating system's mouse sensitivity settings to be slightly lower than average. This allows for smoother, more controlled circling motions when 'kiting' (maintaining optimal distance) an opponent, leading to more accurate strikes.</li>
+                                <li><strong>Ensuring Keyboard Focus:</strong> In some browsers, after clicking the fullscreen button, you might need to click the iframe one more time to ensure the game window has keyboard focus. This guarantees your crucial right-click (sprint) is responsive when you need it most.</li>
+                            </ul>
+
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">The Psychology of The Arena</h3>
+                            <p>EvoWars is as much about mind games as it is about reflexes. Mastering the psychological elements can turn a fair fight into an easy kill.</p>
+                            <ul class="list-disc ml-6 space-y-2">
+                                <li><strong>Show Your Size:</strong> Use your large evolution size (Level 15+) as a deterrent. Move boldly through central map areas. Your sheer presence often forces lower-level players to scatter and cede orbs, granting you passive farming control.</li>
+                                <li><strong>Baiting for Chaos:</strong> A classic tactic is to feign chasing a smaller target. This is not about the kill, but about attracting another, larger player on the opposite side of the map. Let them engage you, then disengage and maneuver them into the path of a third giant. Confusion leads to casualties, and the winner is usually the one who waits.</li>
+                                <li><strong>Risk Management (The Greed Test):</strong> A Level 25 player’s death is almost always caused by greed—trying to grab one more XP orb or chase one more kill. Always evaluate the **Risk vs. Reward**. Is a single experience orb worth sacrificing your 20 minutes of hard-earned progress? The answer is almost always **No**. Live to fight another day.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel rounded-3xl p-8 border border-white/60">
+                        <h2 class="text-2xl font-bold mb-4">Game Mechanics Summary</h2>
+                        <p class="text-gray-600 mb-4">
+                            The core mechanic of EvoWars.io revolves around <strong>experience collection</strong>. You gain XP by collecting colorful orbs scattered on the floor or by killing enemies. 
+                        </p>
+                        <p class="text-gray-600">
+                            When you level up, your character model grows, and your weapon range increases. However, being larger makes you slower and an easier target. This balance ensures that the game remains competitive—a skilled small player can always outmaneuver a clumsy giant.
+                        </p>
+                    </article>
+                </div>
+
+            <aside class="space-y-8">
+                
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-6 text-white shadow-xl">
+                    <h2 class="text-xl font-bold mb-4">Why Play Here?</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="bg-white/10 p-2 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <span class="text-sm font-medium">Official Unblocked Version</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-white/10 p-2 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                            <span class="text-sm font-medium">Instant Load Times</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-white/10 p-2 rounded-full"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></div>
+                            <span class="text-sm font-medium">Fullscreen Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-bold mb-4">Explore More Games</h2>
+                    <div class="space-y-3">
+                        
+                        <a href="https://boom.christmas" target="_blank" rel="noopener noreferrer" class="block group">
+                            <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 font-bold text-lg">B</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm group-hover:text-apple-blue">boom.christmas</div>
+                                    <div class="text-xs text-gray-500">Play Online</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://takeactions.click" target="_blank" rel="noopener noreferrer" class="block group">
+                            <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 font-bold text-lg">T</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm group-hover:text-apple-blue">takeactions.click</div>
+                                    <div class="text-xs text-gray-500">Play Online</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://frontwars.shop" target="_blank" rel="noopener noreferrer" class="block group">
+                            <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 font-bold text-lg">F</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm group-hover:text-apple-blue">frontwars.shop</div>
+                                    <div class="text-xs text-gray-500">Play Online</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://bloxd.asia" target="_blank" rel="noopener noreferrer" class="block group">
+                            <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-gray-50 transition-colors">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-lg">B</div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm group-hover:text-apple-blue">bloxd.asia</div>
+                                    <div class="text-xs text-gray-500">Play Online</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <section id="faq" class="mt-16 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-2">Is EvoWars.io free to play?</h3>
+                    <p class="text-gray-600">Yes, EvoWars is completely free to play in your web browser. There are no pay-to-win mechanics that block your progress.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-2">How many evolution levels are there?</h3>
+                    <p class="text-gray-600">There are currently over 25 distinct evolution stages, ranging from simple prehistoric warriors to mythical entities.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-2">Can I play with friends?</h3>
+                    <p class="text-gray-600">Currently, the game matches you into servers automatically, but if you join at the same time, you have a high chance of landing in the same arena.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <div class="flex justify-center space-x-6 md:order-2">
+                <a href="#" onclick="alert('Privacy Policy:\n\nThis website does not directly collect Personally Identifiable Information (PII).\n\nWe use Google AdSense and Google Analytics, meaning Google uses Cookies for advertising and traffic analysis. You can opt-out of the DART Cookie by visiting Google\'s ad and content network privacy policy.\n\nContact Email: luyh9170@163.com')" class="text-gray-400 hover:text-gray-500">Privacy Policy</a>
+                <a href="#" onclick="alert('Terms of Service:\n\nYou agree to comply with these terms, and understand that the copyright and responsibility for the embedded third-party game content (CrazyGames) belongs to the original provider. We are not responsible for the availability of the embedded game.')" class="text-gray-400 hover:text-gray-500">Terms of Service</a>
+                <a href="#" onclick="alert('Contact Us:\n\nIf you have any questions, please contact us via:\n\nEmail: luyh9170@163.com\n\nWe communicate exclusively via email.')" class="text-gray-400 hover:text-gray-500">Contact</a>
+            </div>
+            <div class="mt-8 md:mt-0 md:order-1">
+                <p class="text-center text-base text-gray-400">
+                    &copy; 2024 EvoWars.buzz. All rights reserved. Not affiliated with Night Steed Games.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fullscreen Logic
+        function toggleFullScreen() {
+            var elem = document.getElementById("game-container");
+            var iframe = document.getElementById("game-frame");
+
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+                // Optional: Force focus to iframe so keyboard inputs work immediately
+                iframe.focus();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) { /* Safari */
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) { /* IE11 */
+                    document.msExitFullscreen();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
